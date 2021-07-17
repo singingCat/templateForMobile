@@ -9,8 +9,9 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import '@/assets/scss/reset.scss'
 import axios from '@/assets/js/axios'
+import router from './router'
 
-const app = createApp(App)
+const app = createApp(App).use(router)
 
 //全局配置
 app.config.globalProperties.$axios=axios
